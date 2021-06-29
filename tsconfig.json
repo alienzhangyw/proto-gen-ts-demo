@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "importsNotUsedAsValues": "error",
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+  ]
+}
