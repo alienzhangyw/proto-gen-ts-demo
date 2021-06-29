@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Config;
+
+message VersionSumary
+{
+  uint32 created_version = 1;
+  string creator = 2;
+  uint64 c_time = 3;
+  uint32 cur_version = 4;
+  string modifier = 5;
+  uint64 m_time = 6;
+}
