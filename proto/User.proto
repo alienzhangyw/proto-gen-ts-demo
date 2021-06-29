@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "Common.proto";
+package Config;
+
+message UserInfo
+{
+  string id = 1;
+  string name = 2;
+  string nickname = 3;
+  string desc = 4;
+  string email = 7;
+  string phone = 8;
+
+  Config.VersionSumary version = 11;
+}
