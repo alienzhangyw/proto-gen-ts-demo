@@ -1,0 +1,120 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb-typescript",
+    "plugin:import/typescript"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "array-callback-return": [
+      "error",
+      {
+        "allowImplicit": true
+      }
+    ],
+    "block-scoped-var": "error",
+    "default-case": [
+      "error",
+      {
+        "commentPattern": "^no default$"
+      }
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "eqeqeq": [
+      "error",
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
+    "guard-for-in": "warn",
+    "max-classes-per-file": [
+      "error",
+      1
+    ],
+    "no-return-assign": [
+      "error",
+      "always"
+    ],
+    "no-with": "error",
+    "vars-on-top": "error",
+    "for-direction": "error",
+    "no-sparse-arrays": "error",
+    "no-unreachable": "error",
+    "no-unsafe-finally": "error",
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "arrow-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "constructor-super": "error",
+    "no-this-before-super": "error",
+    "no-var": "error",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "import/first": "error",
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "react/no-deprecated": [
+      "error"
+    ],
+    "react/no-did-update-set-state": "error",
+    "react/no-will-update-set-state": "error",
+    "react/no-unused-prop-types": [
+      "error",
+      {
+        "customValidators": [],
+        "skipShapeProps": true
+      }
+    ],
+    "react/style-prop-object": "error",
+    "react/no-children-prop": "error",
+    "react/no-array-index-key": "error",
+    "react/default-props-match-prop-types": [
+      "error",
+      {
+        "allowRequiredDefaults": false
+      }
+    ],
+    "react/no-unused-state": "error",
+    "react/no-this-in-sfc": "error",
+    "react/state-in-constructor": [
+      "error",
+      "always"
+    ],
+    "react/prop-types": "off", // Since we do not use prop-types
+    "react/require-default-props": "off", // Since we do not use prop-types
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
