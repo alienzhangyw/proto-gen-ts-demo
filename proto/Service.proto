@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "User.proto";
+
+package Config;
+
+message QueryUserRequest
+{
+  string id = 1;
+}
+
+message UserResponse
+{
+  Config.UserInfo userInfo = 1;
+}
+
+service ConfigService
+{
+  rpc GetUser(QueryUserRequest) returns (UserResponse) {}
+}
